@@ -11,10 +11,12 @@
       margin: 0;
       padding: 0;
     }
+
+    /* Cover Section */
     .cover {
       position: relative;
       width: 100%;
-      height: 250px;
+      height: 260px;
       overflow: hidden;
     }
     .cover img {
@@ -29,12 +31,13 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: #ffffff; /* Only this text is white */
+      color: #ffffff;
       text-align: center;
-      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+      text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9);
       padding: 0 10px;
       z-index: 1;
     }
+
     header, footer {
       background-color: transparent;
       padding: 1rem;
@@ -42,40 +45,61 @@
       position: relative;
       z-index: 2;
     }
+
     main {
       padding: 2rem;
     }
+
     h1, h2 {
-      color: #4caf50; /* All headings remain green */
+      color: #4caf50;
+      margin-bottom: 0.5rem;
     }
+
     .section {
       margin-bottom: 2rem;
     }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
     .contact-info {
       background-color: #1f1f1f;
       padding: 1rem;
       border-radius: 8px;
     }
+
     input, textarea, button {
       display: block;
       width: 100%;
       margin-top: 0.5rem;
       margin-bottom: 1rem;
-      padding: 0.5rem;
+      padding: 0.6rem;
       border: none;
       border-radius: 4px;
+      font-size: 1rem;
     }
+
     button {
       background-color: #4caf50;
       color: white;
       cursor: pointer;
+      font-weight: bold;
     }
+
     button:hover {
       background-color: #45a049;
     }
+
     a {
       color: #4caf50;
+      text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     .terms-box {
       background-color: #1f1f1f;
       border: 1px solid #4caf50;
@@ -84,6 +108,13 @@
       max-height: 200px;
       overflow-y: auto;
       margin-bottom: 1rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: #aaaaaa;
     }
   </style>
 </head>
@@ -92,22 +123,23 @@
   <div class="cover">
     <img src="images/cover.jpg" alt="Workbench Background">
     <div class="cover-text">
-      <h1>AmritTech - Electronics Repair</h1>
+      <h1>AmritTech - All Electronics Repair</h1>
       <p>Professional Repair of Electronics, Power Devices, Networking & More. 30-Day Warranty on All Repairs</p>
     </div>
   </div>
 
   <main>
+
     <div class="section">
       <h2>Our Services</h2>
       <ul>
-        <li>Desktop, Laptop, GPU, Motherboard, Repair & Optimize</li>
-        <li>WIFI Router Repair & Slow Speed Optimization</li>
+        <li>Desktop, Laptop, GPU, Motherboard Repair & Optimization</li>
+        <li>WiFi Router Repair & Slow Speed Optimization</li>
         <li>LED TV & Monitor Repair</li>
         <li>Solar Devices, Power Supply, Inverter Repair</li>
         <li>Receivers & Transmitters Repair</li>
         <li>Sound Systems Repair</li>
-        <li>HDD, SSD, Flash Drive Repair and Basic Data Recovery</li>
+        <li>HDD, SSD, Flash Drive Repair & Basic Data Recovery</li>
       </ul>
     </div>
 
@@ -129,8 +161,8 @@
         <div class="terms-box">
           <h3>Repair Terms</h3>
           <p>All repairs are carried out with care and expertise. However, due to the complex nature of electronics and the condition of used devices, AmritTech cannot be held responsible for any unforeseen failures that may occur during or after the repair process outside of the repaired part.</p>
-          <p>Successfully repaired parts carry a 30-day warranty, which applies only to the specific part or issue that was repaired. This warranty does not cover unrelated issues, physical damage, water damage, power surge damage, or user-caused faults after the repair.</p>
-          <p>In cases where a repair attempt is made but the issue cannot be resolved, or new faults appear due to the fragile nature of the device, a service charge of ₹50 to ₹600 will apply depending on the device type and complexity of the issue.</p>
+          <p>Successfully repaired parts carry a 30-day warranty, applicable only to the specific part or issue that was repaired. This warranty does not cover unrelated issues, physical damage, water damage, power surge damage, or user-caused faults after the repair.</p>
+          <p>If a repair attempt is made but the issue cannot be resolved, or new faults appear due to the fragile nature of the device, a service charge of ₹50 to ₹600 will apply depending on the device type and complexity of the issue.</p>
           <p>By submitting your device for repair, you agree to these terms.</p>
         </div>
 
@@ -152,17 +184,19 @@
 
     <div class="section contact-info">
       <h2>Shipping Options</h2>
-      <p>You can use any courier to send your product to us.</p>
+      <p>You can use any courier to send your product to us:</p>
       <ul>
         <li><a href="https://www.delhivery.com/" target="_blank">Delhivery Courier</a></li>
         <li><a href="https://www.bluedart.com/" target="_blank">Blue Dart Courier</a></li>
       </ul>
       <p><strong>Low-Cost Option:</strong> Visit your nearest Post Office and send by Speed Post or Registered Parcel for affordable rates.</p>
     </div>
+
   </main>
 
   <footer>
     <p>&copy; 2025 AmritTech. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
