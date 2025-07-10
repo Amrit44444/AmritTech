@@ -13,7 +13,6 @@
       padding: 0;
     }
     a { text-decoration: none; }
-    /* Cover Section */
     .cover {
       position: relative;
       width: 100%;
@@ -36,39 +35,29 @@
       background-color: #4caf50; color: #fff; font-weight: 600; border-radius: 4px;
       transition: background-color 0.3s; }
     .btn:hover { background-color: #45a049; }
-    /* Fixed WhatsApp Button */
     .whatsapp-btn {
       position: fixed; bottom: 20px; right: 20px; z-index: 999;
     }
     .whatsapp-btn img { width: 50px; height: 50px; }
-    /* Main Content */
     main { padding: 2rem; }
     h2 { color: #4caf50; margin-bottom: 0.75rem; }
     .section { margin-bottom: 2.5rem; }
     ul { padding-left: 1.2rem; line-height: 1.6; }
-    /* Book Now Section */
     .cta { text-align: center; margin: 2rem 0; }
-    /* Testimonials */
-    .testimonials { background-color: #1f1f1f; padding: 2rem; border-radius: 8px; }
-    .testimonial { margin-bottom: 1.5rem; }
-    .testimonial p { font-style: italic; }
-    .testimonial cite { display: block; margin-top: 0.5rem; font-weight: 600; }
-    /* Trust Badges */
-    .badges { display: flex; justify-content: space-around; margin: 2rem 0; }
-    .badge { text-align: center; }
+    .trust { background-color: #1f1f1f; padding: 2rem; border-radius: 8px; }
+    .trust ul { list-style: none; padding-left: 0; }
+    .trust li { margin-bottom: 0.8rem; }
+    .badges { display: flex; justify-content: space-around; margin: 2rem 0; flex-wrap: wrap; }
+    .badge { text-align: center; margin: 0.5rem; }
     .badge span { display: block; font-size: 2rem; }
-    /* Form Styles */
     input, textarea, button { display: block; width: 100%; margin: 0.5rem 0; padding: 0.75rem; border: none; border-radius: 4px; font-size: 1rem; }
     button[type="submit"] { background-color: #4caf50; color: #fff; font-weight: 600; cursor: pointer; }
     button[type="submit"]:hover { background-color: #45a049; }
     .terms-box { background-color: #1f1f1f; border: 1px solid #4caf50; border-radius: 8px; padding: 1rem; max-height: 160px; overflow-y: auto; font-size: 0.95rem; }
-    /* UPI Section */
     .upi { text-align: center; margin-top: 2rem; }
     .upi img { width: 120px; margin: 0.5rem; }
-    /* Footer */
     footer { text-align: center; padding: 1rem; font-size: 0.9rem; color: #aaaaaa; }
     footer a { color: #4caf50; }
-    /* Responsive */
     @media(max-width: 600px) {
       .cover-text h1 { font-size: 2rem; }
       .badge { flex: 1 1 100%; margin-bottom: 1rem; }
@@ -84,7 +73,6 @@
       <p>Professional Repair of Electronics, Power Devices, Networking & More.</p>
       <div>
         <a href="#book" class="btn">Book Now</a>
-        <a href="https://wa.me/917076288733" class="btn">WhatsApp Us</a>
       </div>
     </div>
   </div>  <main>
@@ -101,21 +89,19 @@
       </ul>
     </div><div class="badges">
   <div class="badge"><span>✅</span>30-Day Warranty</div>
-  <div class="badge"><span>💰</span>Affordable Pricing</div>
-  <div class="badge"><span>🛠</span>Expert Service</div>
-  <div class="badge"><span>⏱</span>Quick Turnaround</div>
+  <div class="badge"><span>💰</span>Transparent Pricing</div>
+  <div class="badge"><span>🛠</span>Expert Repairs</div>
+  <div class="badge"><span>📦</span>Safe & Secure Handling</div>
 </div>
 
-<div class="section testimonials">
-  <h2>What Our Customers Say</h2>
-  <div class="testimonial">
-    <p>"My laptop was completely dead. AmritTech fixed it within 2 days, and it now runs better than before!"</p>
-    <cite>– Sourav B.</cite>
-  </div>
-  <div class="testimonial">
-    <p>"Excellent service, quick turnaround, and friendly communication. Highly recommend!"</p>
-    <cite>– Priya S.</cite>
-  </div>
+<div class="section trust">
+  <h2>Why Customers Trust Us</h2>
+  <ul>
+    <li>🛡 Most of our customers return after other repair shops couldn't fix their device.</li>
+    <li>🔍 We take on difficult repairs that others reject.</li>
+    <li>🤝 Honest advice and transparent pricing — no hidden charges.</li>
+    <li>✅ 30-Day Warranty for peace of mind.</li>
+  </ul>
 </div>
 
 <div id="book" class="section">
@@ -149,7 +135,7 @@
 
 <div class="upi">
   <h2>Pay via UPI</h2>
-  <img src="images/upi-qr.png" alt="UPI QR Code">  <!-- Replace with your QR code -->
+  <img src="images/upi-qr.png" alt="UPI QR Code">
   <p>@amrittechupi</p>
 </div>
 
